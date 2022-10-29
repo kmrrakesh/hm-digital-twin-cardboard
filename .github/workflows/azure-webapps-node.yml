@@ -52,7 +52,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: node-app
-        path: server/public/build
+        path: .
 
   deploy:
     permissions:
