@@ -24,12 +24,12 @@ const Navigation: INavItem[] = [
     displayName: "Twin Builder",
     href: "twinBuilder",
   },
-  {
-    id: "4",
-    name: "PowerBI",
-    displayName: "Power BI",
-    href: "powerBI",
-  },
+  // {
+  //   id: "4",
+  //   name: "PowerBI",
+  //   displayName: "Power BI",
+  //   href: "powerBI",
+  // },
 ];
 
 export default Navigation;
