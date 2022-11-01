@@ -107,7 +107,7 @@ const create = async () => {
         connection: 'keep-alive',
       },
       secure: true,
-      target: '/',
+      target: 'https://hm-digital-instance.api.eus.digitaltwins.azure.net',
       onProxyReq: (proxyReq) => {
         // Remove all unnecessary headers
         const newHeaderMap = {};
@@ -157,7 +157,7 @@ const create = async () => {
       connection: 'keep-alive',
     },
     secure: true,
-    target: '/',
+    target: 'https://hmstore1.blob.core.windows.net',
     onProxyReq: (proxyReq) => {
       // Remove all unnecessary headers
       const newHeaderMap = {};
@@ -243,11 +243,11 @@ const create = async () => {
     res.end();
   });
 
-  app.use(express.static(path.join(__dirname, '../public/build')));
+  app.use(express.static(path.join(__dirname, '../build')));
 
   // Route local React routing back to the index.html
   app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, '../public/build/index.html'), function(err) {
+    res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
       if (err) {
         res.status(500).send(err)
       }

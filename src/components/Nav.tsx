@@ -8,6 +8,7 @@ import AppMsalAuthService from '../services/AppMsalAuthService';
 import { ApplicationContext } from '../App';
 import { NavSearch } from './NavSearch';
 import React from 'react';
+var msal = require('@azure/msal-node');
 
 export interface INavProps {
     className?: string,

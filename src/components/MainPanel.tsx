@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { PowerBI } from "../pages/PowerBI";
+// import { PowerBI } from "../pages/PowerBI";
 import { TwinBuilder } from "../pages/TwinBuilder";
 import { TwinViewer } from "../pages/TwinViewer";
 
@@ -11,8 +11,8 @@ const getPage = (pageName: string): JSX.Element => {
       return <TwinViewer />;
     case "twinbuilder":
       return <TwinBuilder />;
-    case "powerbi":
-      return <PowerBI/>
+    // case "powerbi":
+    //   return <PowerBI/>
     case "home":
     case "/":
     default:

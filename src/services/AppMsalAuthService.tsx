@@ -17,7 +17,7 @@ export default class AppMsalAuthService implements IAuthService {
 
   private environmentToConstantMapping: IEnvironmentToConstantMapping = {
     authority: 'https://login.microsoftonline.com/77428205-87ff-4048-a645-91b337240228',
-    clientId: '[no-client-id]',
+    clientId: '130b94a5-c42b-45cb-8b11-3cf44beb0f52',
     scope: 'https://api.timeseries.azure.com/.default',
     redirectUri: window.location.protocol + '//' + window.location.hostname
   };
