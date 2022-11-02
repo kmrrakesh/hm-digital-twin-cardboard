@@ -30,8 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired --max_old_space_size=4096 start",
-    "build": "react-app-rewired --max_old_space_size=4096 build && node rename.js",
+    "start": "set HTTPS=true&&react-app-rewired --max_old_space_size=4096 start",
+    "build": "set HTTPS=true&&react-app-rewired --max_old_space_size=4096 build && node rename.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

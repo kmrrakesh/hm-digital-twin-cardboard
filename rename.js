@@ -15,10 +15,10 @@ function removeDir(dir) {
     fs.rmdirSync(dir);
 }
 
-// const newRoot = './server/public/build';
+const newRoot = './server/build';
 
-// if (fs.existsSync(newRoot)) {
-//     removeDir(newRoot);
-// }
+if (fs.existsSync(newRoot)) {
+    removeDir(newRoot);
+}
 
-// fs.renameSync('./build', newRoot);
+fs.renameSync('./build', newRoot);
