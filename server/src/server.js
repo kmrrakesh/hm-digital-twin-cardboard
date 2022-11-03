@@ -107,7 +107,7 @@ const create = async () => {
         connection: 'keep-alive',
       },
       secure: true,
-      target: 'https://hm-digital-instance.api.eus.digitaltwins.azure.net',
+      target: '/',
       onProxyReq: (proxyReq) => {
         // Remove all unnecessary headers
         const newHeaderMap = {};
@@ -157,7 +157,7 @@ const create = async () => {
       connection: 'keep-alive',
     },
     secure: true,
-    target: 'https://hmstore1.blob.core.windows.net',
+    target: '/',
     onProxyReq: (proxyReq) => {
       // Remove all unnecessary headers
       const newHeaderMap = {};
