@@ -69,7 +69,5 @@
   "overrides": {
     "minimist@1.2.5": "1.2.6",
     "es5-ext": "0.10.53"
-  },
-  "proxy": "https://hm-iot-cardboard.azurewebsites.net",
-  "homepage": "https://hm-iot-cardboard.azurewebsites.net/server/build"
+  }
 }
