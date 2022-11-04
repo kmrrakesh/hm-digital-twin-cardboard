@@ -17,6 +17,7 @@
     "@types/node": "^16.18.2",
     "@types/react": "^17.0.52",
     "@types/react-dom": "^17.0.18",
+    "express": "^4.18.2",
     "md5": "^2.3.0",
     "msal": "^1.4.17",
     "powerbi-client": "^2.22.0",
@@ -30,7 +31,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set HTTPS=true&&react-app-rewired --max_old_space_size=4096 start",
+    "start": "react-app-rewired --max_old_space_size=4096 start",
     "build": "set HTTPS=true&&react-app-rewired --max_old_space_size=4096 build && node rename.js",
     "eject": "react-scripts eject"
   },

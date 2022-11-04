@@ -33,7 +33,7 @@ const getProfileImageAsync = async (auth: AppMsalAuthService, callback: Function
     let profileImageUrl = `https://www.gravatar.com/avatar/${hash}?d=identicon&r=g`;
 
     try {
-        const authToken = await auth.context().acquireTokenSilent({ scopes: ["user.read"] });
+        const authToken = await auth.context().acquireTokenSilent({ scopes: ["user.read", "openid", "profile", "offline_access"] });
         const profileResponse = await fetch(`https://graph.microsoft.com/v1.0/me/photo/$value`, { headers: { Authorization: `Bearer ${authToken.accessToken}` } });
         const profileImage = await profileResponse.blob();
         profileImageUrl = URL.createObjectURL(profileImage);
